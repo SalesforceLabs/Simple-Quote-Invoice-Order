@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Billing_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Opportunity__r.QuoteBillingFrequency__c , &quot;Monthly&quot;, &quot;Monthly&quot;, &quot;Quarterly&quot;, &quot;Quarterly&quot;,&quot;Yearly&quot;,&quot;Yearly&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Paid__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Paid</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Opportunity__r.QuotePaymentMode__c , &quot;Credit Card&quot;, &quot;Credit Card&quot;, &quot;Wire Transfer&quot;, &quot;Wire Transfer&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Termsquote__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Opportunity__r.QuotePaymentTime__c , &quot;Net 30&quot;, &quot;Net 30&quot;, &quot;Net 45&quot;, &quot;Net 45&quot;,&quot;Net 60&quot;,&quot;Net 60&quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Terms</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Invoice</label>
+    <nameField>
+        <displayFormat>Inv-{0000}</displayFormat>
+        <label>Invoice Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Opp_Won</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(Opportunity__r.StageName,&quot;Prospecting&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Qualification&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Needs Analysis&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Value Proposition&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Id. Decision Makers&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Perception Analysis&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Proposal/Price Quote&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Negotiation/Review&quot;)) || 
+(ISPICKVAL(Opportunity__r.StageName,&quot;Closed Lost&quot;))</errorConditionFormula>
+        <errorMessage>To create an invoice the opportunity has to be in stage: &quot;Closed Won&quot;</errorMessage>
+    </validationRules>
+</CustomObject>

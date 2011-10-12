@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Simple quote%2Finvoice%2Forder</fullName>
+    <description>Generate your quote/invoice/delivery order instantly in pdf and send it per email in 2 clicks. 
+This package provides you with a powerful templates using visualforce technology. 
+You can customize those templates with basic html.
+Professional Edtion with Product Catalog required</description>
+    <types>
+        <members>Delivery_Order</members>
+        <members>Invoice</members>
+        <members>Quote</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Delivery_Order__c.Comments__c</members>
+        <members>Delivery_Order__c.Contact__c</members>
+        <members>Delivery_Order__c.Delivery_date__c</members>
+        <members>Delivery_Order__c.Freight_Operator__c</members>
+        <members>Delivery_Order__c.Number_of_parcels__c</members>
+        <members>Delivery_Order__c.Opportunity__c</members>
+        <members>Delivery_Order__c.Tracking_Number__c</members>
+        <members>Invoice1__c.Billing_Frequency__c</members>
+        <members>Invoice1__c.Invoice_Date__c</members>
+        <members>Invoice1__c.Opportunity__c</members>
+        <members>Invoice1__c.Paid__c</members>
+        <members>Invoice1__c.Payment_Method__c</members>
+        <members>Invoice1__c.Payment_Termsquote__c</members>
+        <members>Opportunity.Conditions__c</members>
+        <members>Opportunity.Invoice_paid__c</members>
+        <members>Opportunity.QuoteBeginDate__c</members>
+        <members>Opportunity.QuoteBillingFrequency__c</members>
+        <members>Opportunity.QuoteEndDate__c</members>
+        <members>Opportunity.QuoteNumber__c</members>
+        <members>Opportunity.QuotePaymentMode__c</members>
+        <members>Opportunity.QuotePaymentTime__c</members>
+        <members>Opportunity.QuoteVersion__c</members>
+        <members>Product2.ProductPicture__c</members>
+        <members>Product2.URL_Picture__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Delivery_Order__c</members>
+        <members>Invoice1__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Quote_invoice_order</members>
+        <members>Quote_invoice_order/Logo4567687_gif.gif</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>Quotes</members>
+        <members>Quotes/Invoice</members>
+        <members>Quotes/Quote</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Delivery_Order__c-Delivery Order Layout</members>
+        <members>Invoice1__c-Invoice Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Logo4567687</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Delivery_Order__c.Invoice_paid</members>
+        <members>Invoice1__c.Opp_Won</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Opportunity.Delivery_Order</members>
+        <members>Opportunity.Generate_Invoice</members>
+        <members>Opportunity.Generate_Quote</members>
+        <name>WebLink</name>
+    </types>
+    <version>20.0</version>
+</Package>
