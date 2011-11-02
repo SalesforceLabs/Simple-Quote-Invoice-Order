@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account name</shortDescription>
+        <value>Account name</value>
+    </labels>
+    <labels>
+        <fullName>AccountName_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccountName_PDF</shortDescription>
+        <value>Account name</value>
+    </labels>
+    <labels>
+        <fullName>AccountName_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccountName_PDF_Quote</shortDescription>
+        <value>Account name</value>
+    </labels>
+    <labels>
+        <fullName>AccountName_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccountName_Quote</shortDescription>
+        <value>Account name</value>
+    </labels>
+    <labels>
+        <fullName>Account_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account_Name</shortDescription>
+        <value>Account name</value>
+    </labels>
+    <labels>
+        <fullName>AddressInformation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Address Information</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>AddressInformation_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AddressInformation_PDF</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>AddressInformation_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AddressInformation_Quote</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>Address_Information</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Address_Information</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>Address_Information_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Address_Information_PDF_Quote</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>BillTo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bill To</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>BillTo_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillTo_PDF</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>BillTo_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillTo_PDF_Quote</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>BillTo_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillTo_Quote</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>Bill_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bill_To</shortDescription>
+        <value>Bill To</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequency</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Billing Frequency</shortDescription>
+        <value>Billing Frequency</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequency_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillingFrequency_PDF</shortDescription>
+        <value>Billing Frequency</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequency_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillingFrequency_PDF_Quote</shortDescription>
+        <value>Billing Frequency</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequency_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillingFrequency_Quote</shortDescription>
+        <value>Billing Frequency</value>
+    </labels>
+    <labels>
+        <fullName>BillingFrequency_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BillingFrequency_mail</shortDescription>
+        <value>Billing Frequency</value>
+    </labels>
+    <labels>
+        <fullName>ContractEndDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contract End date</shortDescription>
+        <value>Contract End date</value>
+    </labels>
+    <labels>
+        <fullName>ContractEndDate_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ContractEndDate_PDF_Quote</shortDescription>
+        <value>Contract End date</value>
+    </labels>
+    <labels>
+        <fullName>ContractEndDate_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ContractEndDate_Quote</shortDescription>
+        <value>Contract End date</value>
+    </labels>
+    <labels>
+        <fullName>Copyright_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copyright_PDF</shortDescription>
+        <value>Copyright</value>
+    </labels>
+    <labels>
+        <fullName>Copyright_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copyright_PDF_Quote</shortDescription>
+        <value>Copyright</value>
+    </labels>
+    <labels>
+        <fullName>Copyright_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copyright_Quote</shortDescription>
+        <value>Copyright</value>
+    </labels>
+    <labels>
+        <fullName>Copyright_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copyright_mail</shortDescription>
+        <value>Copyright</value>
+    </labels>
+    <labels>
+        <fullName>Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Date</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>Date1_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Date1_PDF_Quote</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>Date1_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Date1_Quote</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>Date2_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Date2_PDF_Quote</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>Date2_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Date2_Quote</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>Dear</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dear</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>Dear_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Dear_Quote</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>DeliveryOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delivery Order</shortDescription>
+        <value>Delivery Order</value>
+    </labels>
+    <labels>
+        <fullName>DeliveryOrderFor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delivery Order  for</shortDescription>
+        <value>Delivery Order  for</value>
+    </labels>
+    <labels>
+        <fullName>DeliveryOrderManager</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delivery Order Manager</shortDescription>
+        <value>Delivery Order Manager</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Description_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description_PDF</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Description_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description_PDF_Quote</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Description_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description_Quote</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Description_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description_mail</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>FeelFreeToContact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeelFreeToContact</shortDescription>
+        <value>Feel free to contact me if you have any questions.</value>
+    </labels>
+    <labels>
+        <fullName>FeelFreeToContact_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeelFreeToContact_Quote</shortDescription>
+        <value>Feel free to contact me if you have any questions.</value>
+    </labels>
+    <labels>
+        <fullName>FollowingYourOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FollowingYourOrder</shortDescription>
+        <value>Following your order, please see attached and below your invoice per your request.</value>
+    </labels>
+    <labels>
+        <fullName>FreightOperator</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Freight Operator</shortDescription>
+        <value>Freight Operator</value>
+    </labels>
+    <labels>
+        <fullName>Image</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Image</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>Image_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Image_PDF</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>Image_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Image_PDF_Quote</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>Image_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Image_Quote</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>Image_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Image_mail</shortDescription>
+        <value>Image</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice Date</shortDescription>
+        <value>Invoice Date</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceDate_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvoiceDate_PDF</shortDescription>
+        <value>Invoice Date</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceFor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice for</shortDescription>
+        <value>Invoice for</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceFor_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvoiceFor_PDF</shortDescription>
+        <value>Invoice for</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice number</shortDescription>
+        <value>Invoice number</value>
+    </labels>
+    <labels>
+        <fullName>InvoiceNumber_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvoiceNumber_PDF</shortDescription>
+        <value>Invoice number</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_Date</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice_Date</shortDescription>
+        <value>Invoice Date</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_For</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice_For</shortDescription>
+        <value>Invoice for</value>
+    </labels>
+    <labels>
+        <fullName>Invoice_Number</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invoice_Number</shortDescription>
+        <value>Invoice number</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Name1_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name1_PDF_Quote</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Name1_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name1_Quote</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Name2_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name2_PDF_Quote</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Name2_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name2_Quote</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>NumberOfParcels</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Number of parcels</shortDescription>
+        <value>Number of parcels</value>
+    </labels>
+    <labels>
+        <fullName>OfferValidThrough</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Offer valid Through</shortDescription>
+        <value>Offer valid Through</value>
+    </labels>
+    <labels>
+        <fullName>OfferValidThrough_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OfferValidThrough_PDF_Quote</shortDescription>
+        <value>Offer valid Through</value>
+    </labels>
+    <labels>
+        <fullName>OfferValidThrough_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OfferValidThrough_Quote</shortDescription>
+        <value>Offer valid Through</value>
+    </labels>
+    <labels>
+        <fullName>PaymentMethod</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Payment Method</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>PaymentMethod_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentMethod_PDF</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>PaymentMethod_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentMethod_PDF_Quote</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>PaymentMethod_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentMethod_Quote</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>PaymentMethod_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentMethod_mail</shortDescription>
+        <value>Payment Method</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTerms</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Payment Terms</shortDescription>
+        <value>Payment Terms</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTerms_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentTerms_PDF</shortDescription>
+        <value>Payment Terms</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTerms_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentTerms_PDF_Quote</shortDescription>
+        <value>Payment Terms</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTerms_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentTerms_Quote</shortDescription>
+        <value>Payment Terms</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTerms_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PaymentTerms_mail</shortDescription>
+        <value>Payment Terms</value>
+    </labels>
+    <labels>
+        <fullName>PleaseSeeTheAttached_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PleaseSeeTheAttached_Quote</shortDescription>
+        <value>Please see the attached quote per your request.</value>
+    </labels>
+    <labels>
+        <fullName>Product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Product_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product_PDF</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Product_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product_PDF_Quote</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Product_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product_Quote</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Product_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Product_mail</shortDescription>
+        <value>Product</value>
+    </labels>
+    <labels>
+        <fullName>Products</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Products</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>Products_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Products_PDF</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>Products_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Products_PDF_Quote</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>Products_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Products_Quote</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>Products_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Products_mail</shortDescription>
+        <value>Products</value>
+    </labels>
+    <labels>
+        <fullName>ProposedBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Proposed by</shortDescription>
+        <value>Proposed by</value>
+    </labels>
+    <labels>
+        <fullName>ProposedBy_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProposedBy_PDF_Quote</shortDescription>
+        <value>Proposed by</value>
+    </labels>
+    <labels>
+        <fullName>ProposedBy_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProposedBy_Quote</shortDescription>
+        <value>Proposed by</value>
+    </labels>
+    <labels>
+        <fullName>Quantity</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Quantity_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quantity_PDF</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Quantity_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quantity_PDF_Quote</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Quantity_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quantity_Quote</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Quantity_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quantity_mail</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>QuoteFor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quote  for</shortDescription>
+        <value>Quote  for</value>
+    </labels>
+    <labels>
+        <fullName>QuoteFor_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuoteFor_PDF_Quote</shortDescription>
+        <value>Quote  for</value>
+    </labels>
+    <labels>
+        <fullName>QuoteFor_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuoteFor_Quote</shortDescription>
+        <value>Quote  for</value>
+    </labels>
+    <labels>
+        <fullName>QuoteNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Quote number</shortDescription>
+        <value>Quote number</value>
+    </labels>
+    <labels>
+        <fullName>QuoteNumber_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuoteNumber_PDF_Quote</shortDescription>
+        <value>Quote number</value>
+    </labels>
+    <labels>
+        <fullName>QuoteNumber_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuoteNumber_Quote</shortDescription>
+        <value>Quote number</value>
+    </labels>
+    <labels>
+        <fullName>Regards</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Regards</shortDescription>
+        <value>Regards</value>
+    </labels>
+    <labels>
+        <fullName>Regards_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Regards_Quote</shortDescription>
+        <value>Regards,</value>
+    </labels>
+    <labels>
+        <fullName>ShipTo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Ship To</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>ShipTo_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ShipTo_PDF</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>ShipTo_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ShipTo_PDF_Quote</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>ShipTo_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ShipTo_Quote</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>Ship_To</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Ship_To</shortDescription>
+        <value>Ship To</value>
+    </labels>
+    <labels>
+        <fullName>Signature</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Signature</shortDescription>
+        <value>Signature</value>
+    </labels>
+    <labels>
+        <fullName>Signature1_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Signature1_PDF_Quote</shortDescription>
+        <value>Signature</value>
+    </labels>
+    <labels>
+        <fullName>Signature1_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Signature1_Quote</shortDescription>
+        <value>Signature</value>
+    </labels>
+    <labels>
+        <fullName>Signature2_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Signature2_PDF_Quote</shortDescription>
+        <value>Signature</value>
+    </labels>
+    <labels>
+        <fullName>Signature2_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Signature2_Quote</shortDescription>
+        <value>Signature</value>
+    </labels>
+    <labels>
+        <fullName>SpecialTerms</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Special Terms</shortDescription>
+        <value>Special Terms</value>
+    </labels>
+    <labels>
+        <fullName>SpecialTerms_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SpecialTerms_PDF</shortDescription>
+        <value>Special Terms</value>
+    </labels>
+    <labels>
+        <fullName>SpecialTerms_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SpecialTerms_mail</shortDescription>
+        <value>Special Terms</value>
+    </labels>
+    <labels>
+        <fullName>StartDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Start date</shortDescription>
+        <value>Start date</value>
+    </labels>
+    <labels>
+        <fullName>StartDate_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartDate_PDF_Quote</shortDescription>
+        <value>Start date</value>
+    </labels>
+    <labels>
+        <fullName>StartDate_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>StartDate_Quote</shortDescription>
+        <value>Start date</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Terms and Conditions</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditions_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TermsAndConditions_PDF</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditions_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TermsAndConditions_PDF_Quote</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditions_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TermsAndConditions_Quote</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditions_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TermsAndConditions_mail</shortDescription>
+        <value>Terms and Conditions</value>
+    </labels>
+    <labels>
+        <fullName>ThankYouForYourContinued_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ThankYouForYourContinued_Quote</shortDescription>
+        <value>Thank you for your continued interest in our offering.</value>
+    </labels>
+    <labels>
+        <fullName>Title</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Title1_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title1_PDF_Quote</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Title1_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title1_Quote</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Title2_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title2_PDF_Quote</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Title2_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Title2_Quote</shortDescription>
+        <value>Title</value>
+    </labels>
+    <labels>
+        <fullName>Total</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>TotalPrice</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total Price</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>TotalPrice_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TotalPrice_PDF_Quote</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>Total_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total_PDF</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>Total_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total_PDF_Quote</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>Total_Price_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total Price_PDF</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>Total_Price_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total Price_Quote</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>Total_Price_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total Price_mail</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>Total_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total_Quote</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>Total_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Total_mail</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>TrackingNumber</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tracking Number</shortDescription>
+        <value>Tracking Number</value>
+    </labels>
+    <labels>
+        <fullName>UnitPrice</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unit Price</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>UnitPrice_PDF_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UnitPrice_PDF_Quote</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>Unit_Price_PDF</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unit Price_PDF</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>Unit_Price_Quote</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unit Price_Quote</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>Unit_Price_mail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Unit Price_mail</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+</CustomLabels>
