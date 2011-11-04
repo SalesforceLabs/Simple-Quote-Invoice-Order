@@ -3,14 +3,14 @@ relatedToType="Opportunity">
 <messaging:htmlEmailBody >
 <table border="0" cellspacing="0" cellpadding="0" width="100%" id="table1">
 <td>
-Dear {!recipient.name},<br/>
+{!$Label.Dear_Quote} {!recipient.name},<br/>
         
-        Thank you for your continued interest in our offering.<br/>
-        Please see the attached quote per your request.<br/>
+        {!$Label.ThankYouForYourContinued_Quote}<br/>
+        {!$Label.PleaseSeeTheAttached_Quote}<br/>
         
-        Feel free to contact me if you have any questions.<br/>
+        {!$Label.FeelFreeToContact_Quote}<br/>
         
-        Regards,<br/>
+        {!$Label.Regards_Quote}<br/>
         {!$User.firstname} {!$User.lastname}<br/>
   </td>
   <td>&nbsp;</td>
@@ -28,7 +28,7 @@ Dear {!recipient.name},<br/>
     
     
     <td  align="right"><font face="Arial" >
-    <b>Quote  for {!relatedTo.Account.Name}</b></font><br/>
+    <b>{!$Label.QuoteFor_Quote} {!relatedTo.Account.Name}</b></font><br/>
     </td>
     
     
@@ -45,34 +45,34 @@ Dear {!recipient.name},<br/>
         {!$Organization.Country}<br/>
         </font></td> 
         <td width="60%">&nbsp;</td>
-   <td ><font face="Arial">Quote number: {!relatedTo.QuoteNumber__c}_
+   <td ><font face="Arial">{!$Label.QuoteNumber_Quote}: {!relatedTo.QuoteNumber__c}_
    {!relatedTo.QuoteVersion__c}<br/>
         <br/>
-        Offer valid Through:&nbsp;<apex:OutputField value="{!relatedTo.CloseDate}"/><br/>    
-        Proposed by: {!relatedTo.Owner.LastName} {!relatedTo.Owner.FirstName}</font>
+        {!$Label.OfferValidThrough_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.CloseDate}"/><br/>    
+        {!$Label.ProposedBy_Quote}: {!relatedTo.Owner.LastName} {!relatedTo.Owner.FirstName}</font>
      </td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font face="Arial" color="#000080">Address Information</font></b></p>
+<p><b><font face="Arial" color="#000080">{!$Label.AddressInformation_Quote}</font></b></p>
 
 <table border="0" width="100%" id="table2">
 <tr>
        <td colspan="3">
-           <font face="Arial">Account name: {!relatedTo.Account.Name} <br/><br/></font>
+           <font face="Arial">{!$Label.AccountName_Quote}: {!relatedTo.Account.Name} <br/><br/></font>
        </td>
 </tr>
 <tr>
        <td>          
-           <font face="Arial">Bill To:<br/>
+           <font face="Arial">{!$Label.BillTo_Quote}:<br/>
                              {!relatedTo.Account.BillingStreet}<br/>
                              {!relatedTo.Account.BillingPostalCode} {!relatedTo.Account.BillingCity}
            </font>
         </td>
         <td width="50%"></td>
         <td >
-           <font face="Arial">Ship To:<br/>
+           <font face="Arial">{!$Label.ShipTo_Quote}:<br/>
                               {!relatedTo.Account.ShippingStreet}<br/>
                               {!relatedTo.Account.ShippingPostalCode} {!relatedTo.Account.ShippingCity}
            </font>
@@ -81,15 +81,15 @@ Dear {!recipient.name},<br/>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Products</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.Products_Quote}</font></b></p>
 <table border="0" width="100%" id="table4">
 <tr>
-       <td bgcolor="#C0C0C0"><font face="Arial">Product</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Description</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Image</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Quantity</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Unit Price</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Total Price</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Product_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Description_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Image_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Quantity_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Unit_Price_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Total_Price_Quote}</font></td>
 </tr>
 <tr>
        <apex:repeat value="{!relatedTo.OpportunityLineItems}" var="line">
@@ -105,25 +105,25 @@ Dear {!recipient.name},<br/>
 </tr>
 <tr>
        <td bgcolor="#C0C0C0" align="right" colspan="6">
-       <font face="Arial"><b>Total:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
+       <font face="Arial"><b>{!$Label.Total_Quote}:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Terms and Conditions</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.TermsAndConditions_Quote}</font></b></p>
 <table border="0" width="100%" id="table3">
 <tr>
         <td><font face="Arial">
         
-              Start date:&nbsp;<apex:OutputField value="{!relatedTo.QuoteBeginDate__c}"/><br/>
-              Contract End date:&nbsp;<apex:OutputField value="{!relatedTo.QuoteEndDate__c}"/><br/>
+              {!$Label.StartDate_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.QuoteBeginDate__c}"/><br/>
+              {!$Label.ContractEndDate_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.QuoteEndDate__c}"/><br/>
             </font>
         </td>
         <td width="50%"></td>
         <td><font face="Arial">
-              Payment Method:&nbsp; {!relatedTo.QuotePaymentMode__c}<br/>
-              Payment Terms: &nbsp;{!relatedTo.QuotePaymentTime__c}<br/>
-              Billing Frequency:&nbsp; {!relatedTo.QuoteBillingFrequency__c} 
+              {!$Label.PaymentMethod_Quote}:&nbsp; {!relatedTo.QuotePaymentMode__c}<br/>
+              {!$Label.PaymentTerms_Quote}: &nbsp;{!relatedTo.QuotePaymentTime__c}<br/>
+              {!$Label.BillingFrequency_Quote}:&nbsp; {!relatedTo.QuoteBillingFrequency__c} 
             </font>
        </td>
 </tr>
@@ -142,25 +142,25 @@ Dear {!recipient.name},<br/>
    <td width="50%">&nbsp;</td>
 </tr>
 <tr>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature1_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature2_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Name<hr color="black" size="1"/></td>
-   <td width="50%">Name<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name1_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name2_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Title<hr color="black" size="1"/></td>
-   <td width="50%">Title<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title1_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title2_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Date<hr color="black" size="1"/></td>
-   <td width="50%">Date<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date1_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date2_Quote}<hr color="black" size="1"/></td>
 </tr>
 </table>
 <p>&nbsp;</p>
 <hr/>
-<p align="center"><font face="Arial"><i>Copyright {!$Organization.Name}.</i></font></p>
+<p align="center"><font face="Arial"><i>{!$Label.Copyright_Quote} {!$Organization.Name}.</i></font></p>
         
 
 </messaging:htmlEmailBody>
@@ -189,34 +189,34 @@ Dear {!recipient.name},<br/>
         {!$Organization.Country}<br/>
         </font></td> 
         <td width="60%">&nbsp;</td>
-   <td ><font face="Arial">Quote number: {!relatedTo.QuoteNumber__c}_
+   <td ><font face="Arial">{!$Label.QuoteFor_PDF_Quote}: {!relatedTo.QuoteNumber__c}_
    {!relatedTo.QuoteVersion__c}<br/>
         <br/>
-        Offer valid Through:&nbsp;<apex:OutputField value="{!relatedTo.CloseDate}"/><br/>    
-        Proposed by: {!relatedTo.Owner.LastName} {!relatedTo.Owner.FirstName}</font>
+        {!$Label.OfferValidThrough_PDF_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.CloseDate}"/><br/>    
+        {!$Label.ProposedBy_PDF_Quote}: {!relatedTo.Owner.LastName} {!relatedTo.Owner.FirstName}</font>
      </td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font face="Arial" color="#000080">Address Information</font></b></p>
+<p><b><font face="Arial" color="#000080">{!$Label.Address_Information_PDF_Quote}</font></b></p>
 
 <table border="0" width="100%" id="table2">
 <tr>
        <td colspan="3">
-           <font face="Arial">Account name: {!relatedTo.Account.Name} <br/><br/></font>
+           <font face="Arial">{!$Label.AccountName_PDF_Quote}: {!relatedTo.Account.Name} <br/><br/></font>
        </td>
 </tr>
 <tr>
        <td>          
-           <font face="Arial">Bill To:<br/>
+           <font face="Arial">{!$Label.BillTo_PDF_Quote}:<br/>
                              {!relatedTo.Account.BillingStreet}<br/>
                              {!relatedTo.Account.BillingPostalCode} {!relatedTo.Account.BillingCity}
            </font>
         </td>
         <td width="50%"></td>
         <td >
-           <font face="Arial">Ship To:<br/>
+           <font face="Arial">{!$Label.ShipTo_PDF_Quote}:<br/>
                               {!relatedTo.Account.ShippingStreet}<br/>
                               {!relatedTo.Account.ShippingPostalCode} {!relatedTo.Account.ShippingCity}
            </font>
@@ -225,15 +225,15 @@ Dear {!recipient.name},<br/>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Products</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.Products_PDF_Quote}</font></b></p>
 <table border="0" width="100%" id="table4">
 <tr>
-       <td bgcolor="#C0C0C0"><font face="Arial">Product</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Description</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Image</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Quantity</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Unit Price</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Total Price</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Product_PDF_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Description_PDF_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Image_PDF_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Quantity_PDF_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.UnitPrice_PDF_Quote}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.TotalPrice_PDF_Quote}</font></td>
 </tr>
 <tr>
        <apex:repeat value="{!relatedTo.OpportunityLineItems}" var="line">
@@ -249,25 +249,25 @@ Dear {!recipient.name},<br/>
 </tr>
 <tr>
        <td bgcolor="#C0C0C0" align="right" colspan="6">
-       <font face="Arial"><b>Total:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
+       <font face="Arial"><b>{!$Label.Total_PDF_Quote}:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Terms and Conditions</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.TermsAndConditions_PDF_Quote}</font></b></p>
 <table border="0" width="100%" id="table3">
 <tr>
         <td><font face="Arial">
         
-              Start date:&nbsp;<apex:OutputField value="{!relatedTo.QuoteBeginDate__c}"/><br/>
-              Contract End date:&nbsp;<apex:OutputField value="{!relatedTo.QuoteEndDate__c}"/><br/>
+              {!$Label.StartDate_PDF_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.QuoteBeginDate__c}"/><br/>
+              {!$Label.ContractEndDate_PDF_Quote}:&nbsp;<apex:OutputField value="{!relatedTo.QuoteEndDate__c}"/><br/>
             </font>
         </td>
         <td width="50%"></td>
         <td><font face="Arial">
-              Payment Method:&nbsp; {!relatedTo.QuotePaymentMode__c}<br/>
-              Payment Terms:&nbsp; {!relatedTo.QuotePaymentTime__c}<br/>
-              Billing Frequency: &nbsp;{!relatedTo.QuoteBillingFrequency__c} 
+              {!$Label.PaymentMethod_PDF_Quote}:&nbsp; {!relatedTo.QuotePaymentMode__c}<br/>
+              {!$Label.PaymentTerms_PDF_Quote}:&nbsp; {!relatedTo.QuotePaymentTime__c}<br/>
+              {!$Label.BillingFrequency_PDF_Quote}: &nbsp;{!relatedTo.QuoteBillingFrequency__c} 
             </font>
        </td>
 </tr>
@@ -286,25 +286,25 @@ Dear {!recipient.name},<br/>
    <td width="50%">&nbsp;</td>
 </tr>
 <tr>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature1_PDF_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature2_PDF_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Name<hr color="black" size="1"/></td>
-   <td width="50%">Name<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name1_PDF_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name2_PDF_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Title<hr color="black" size="1"/></td>
-   <td width="50%">Title<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title1_PDF_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title2_PDF_Quote}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Date<hr color="black" size="1"/></td>
-   <td width="50%">Date<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date1_PDF_Quote}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date2_PDF_Quote}<hr color="black" size="1"/></td>
 </tr>
 </table>
 <p>&nbsp;</p>
 <hr/>
-<p align="center"><font face="Arial"><i>Copyright {!$Organization.Name}.</i></font></p>
+<p align="center"><font face="Arial"><i>{!$Label.Copyright_PDF_Quote} {!$Organization.Name}.</i></font></p>
 
     </messaging:attachment>      
     

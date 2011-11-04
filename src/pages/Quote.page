@@ -1,4 +1,8 @@
-<apex:page standardController="Opportunity" showHeader="false" renderas="pdf">
+<apex:page standardController="Opportunity" showHeader="false" renderas="pdf" extensions="Common_Controller">
+<head>
+<apex:outputText value="{!japaneseFontStyle}" escape="false" />
+</head>
+<body>
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%" id="table1">
 <tr>
@@ -6,7 +10,7 @@
         <img src='{!URLFOR($Resource.Logo4567687)}' title="logo" />
     </td>
     <td  align="right"><font face="Arial" >
-    <b>Quote  for {!Opportunity.Account.Name}</b></font><br/>
+    <b>{!$Label.QuoteFor} {!Opportunity.Account.Name}</b></font><br/>
     </td>
     
     
@@ -23,34 +27,34 @@
         {!$Organization.Country}<br/>
         </font></td> 
         <td width="60%">&nbsp;</td>
-   <td ><font face="Arial">Quote number: {!Opportunity.QuoteNumber__c}
+   <td ><font face="Arial">{!$Label.QuoteNumber}: {!Opportunity.QuoteNumber__c}
    {!Opportunity.QuoteVersion__c}<br/>
         <br/>
-        Offer valid Through:&nbsp;<apex:OutputField value="{!Opportunity.CloseDate}"/><br/>    
-        Proposed by: {!Opportunity.Owner.LastName} {!Opportunity.Owner.FirstName}</font>
+        {!$Label.OfferValidThrough}:&nbsp;<apex:OutputField value="{!Opportunity.CloseDate}"/><br/>    
+        {!$Label.ProposedBy}: {!Opportunity.Owner.LastName} {!Opportunity.Owner.FirstName}</font>
      </td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font face="Arial" color="#000080">Address Information</font></b></p>
+<p><b><font face="Arial" color="#000080">{!$Label.AddressInformation}</font></b></p>
 
 <table border="0" width="100%" id="table2">
 <tr>
        <td colspan="3">
-           <font face="Arial">Account name: {!Opportunity.Account.Name} <br/><br/></font>
+           <font face="Arial">{!$Label.AccountName}: {!Opportunity.Account.Name} <br/><br/></font>
        </td>
 </tr>
 <tr>
        <td>          
-           <font face="Arial">Bill To:<br/>
+           <font face="Arial">{!$Label.BillTo}:<br/>
                              {!Opportunity.Account.BillingStreet}<br/>
                              {!Opportunity.Account.BillingPostalCode} {!Opportunity.Account.BillingCity}
            </font>
         </td>
         <td width="50%"></td>
         <td >
-           <font face="Arial">Ship To:<br/>
+           <font face="Arial">{!$Label.ShipTo}:<br/>
                               {!Opportunity.Account.ShippingStreet}<br/>
                               {!Opportunity.Account.ShippingPostalCode} {!Opportunity.Account.ShippingCity}
            </font>
@@ -59,15 +63,15 @@
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Products</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.Products}</font></b></p>
 <table border="0" width="100%" id="table4">
 <tr>
-       <td bgcolor="#C0C0C0"><font face="Arial">Product</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Description</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Image</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Quantity</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Unit Price</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Total Price</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Product}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Description}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Image}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Quantity}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.UnitPrice}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.TotalPrice}</font></td>
 </tr>
 <tr>
        <apex:repeat value="{!Opportunity.OpportunityLineItems}" var="line">
@@ -83,25 +87,25 @@
 </tr>
 <tr>
        <td bgcolor="#C0C0C0" align="right" colspan="6">
-       <font face="Arial"><b>Total:</b>&nbsp;<apex:OutputField value="{!Opportunity.Amount}"/></font></td>
+       <font face="Arial"><b>{!$Label.Total}:</b>&nbsp;<apex:OutputField value="{!Opportunity.Amount}"/></font></td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Terms and Conditions</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.TermsAndConditions}</font></b></p>
 <table border="0" width="100%" id="table3">
 <tr>
         <td><font face="Arial">
         
-              Start date:&nbsp;<apex:OutputField value="{!Opportunity.QuoteBeginDate__c}"/><br/>
-              Contract End date:&nbsp;<apex:OutputField value="{!Opportunity.QuoteEndDate__c}"/><br/>
+              {!$Label.StartDate}:&nbsp;<apex:OutputField value="{!Opportunity.QuoteBeginDate__c}"/><br/>
+              {!$Label.ContractEndDate}:&nbsp;<apex:OutputField value="{!Opportunity.QuoteEndDate__c}"/><br/>
             </font>
         </td>
         <td width="50%"></td>
         <td><font face="Arial">
-              Payment Method:<apex:OutputField value="{!Opportunity.QuotePaymentMode__c}"/><br/>
-              Payment Terms: <apex:OutputField value="{!Opportunity.QuotePaymentTime__c}"/><br/>
-              Billing Frequency: <apex:OutputField value="{!Opportunity.QuoteBillingFrequency__c}"/><br/>
+              {!$Label.PaymentMethod}:<apex:OutputField value="{!Opportunity.QuotePaymentMode__c}"/><br/>
+              {!$Label.PaymentTerms}: <apex:OutputField value="{!Opportunity.QuotePaymentTime__c}"/><br/>
+              {!$Label.BillingFrequency}: <apex:OutputField value="{!Opportunity.QuoteBillingFrequency__c}"/><br/>
             </font>
        </td>
 </tr>
@@ -120,23 +124,25 @@
    <td width="50%">&nbsp;</td>
 </tr>
 <tr>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
-   <td width="50%">Signature<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Signature}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Name<hr color="black" size="1"/></td>
-   <td width="50%">Name<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Name}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Title<hr color="black" size="1"/></td>
-   <td width="50%">Title<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Title}<hr color="black" size="1"/></td>
 </tr>
 <tr>
-   <td width="50%">Date<hr color="black" size="1"/></td>
-   <td width="50%">Date<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date}<hr color="black" size="1"/></td>
+   <td width="50%">{!$Label.Date}<hr color="black" size="1"/></td>
 </tr>
 </table>
 <p>&nbsp;</p>
 <hr/>
 <p align="center"><font face="Arial"><i>Copyright {!$Organization.Name}.</i></font></p>
+
+</body>
 </apex:page>
