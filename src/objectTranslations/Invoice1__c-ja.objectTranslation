@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <fields>
+        <label>支払回数</label>
+        <name>Billing_Frequency__c</name>
+    </fields>
+    <fields>
+        <label>請求日</label>
+        <name>Invoice_Date__c</name>
+    </fields>
+    <fields>
+        <label>商談</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel>請求</relationshipLabel>
+    </fields>
+    <fields>
+        <label>支払済</label>
+        <name>Paid__c</name>
+    </fields>
+    <fields>
+        <label>支払方法</label>
+        <name>Payment_Method__c</name>
+    </fields>
+    <fields>
+        <label>支払条件</label>
+        <name>Payment_Termsquote__c</name>
+    </fields>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label>カスタムリンク</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>請求書を作成するには、商談の状態が“Closed Won”になる必要があります。</errorMessage>
+        <name>Opp_Won</name>
+    </validationRules>
+</CustomObjectTranslation>

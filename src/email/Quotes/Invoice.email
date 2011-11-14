@@ -3,13 +3,13 @@ relatedToType="Opportunity">
 <messaging:htmlEmailBody >
 <table border="0" cellspacing="0" cellpadding="0" width="100%" id="table1">
 <td>
-Dear {!recipient.name},<br/>
+{!$Label.Dear} {!recipient.name},<br/>
         
-        Following your order, please see attached and below your invoice per your request.<br/>
+        {!$Label.FollowingYourOrder}<br/>
         
-        Feel free to contact me if you have any questions.<br/>
+        {!$Label.FeelFreeToContact}<br/>
         
-        Regards,<br/>
+        {!$Label.Regards}<br/>
         {!$User.FirstName} {!$User.LastName}<br/>
 </td>
 </table>
@@ -21,7 +21,7 @@ Dear {!recipient.name},<br/>
         <img src='https://na6.salesforce.com/servlet/servlet.ImageServer?id=01580000000fm9d&oid=00D80000000bmx6' title="logo" />
     </td>
     <td  align="right"><font face="Arial" >
-    <b>Invoice for {!relatedTo.Account.Name}</b></font><br/>
+    <b>{!$Label.Invoice_For} {!relatedTo.Account.Name}</b></font><br/>
    </td>
    
   
@@ -39,11 +39,11 @@ Dear {!recipient.name},<br/>
         {!$Organization.Country}<br/>
         </font></td> 
         <td width="60%">&nbsp;</td>
-   <td ><font face="Arial">Invoice number: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
+   <td ><font face="Arial">{!$Label.Invoice_Number}: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
    {!line2.name}</apex:repeat></font><br/>
   
    
-   <font face="Arial">Invoice Date: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
+   <font face="Arial">{!$Label.Invoice_Date}: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
    {!line2.Invoice_Date__c}  </apex:repeat></font></td>
  
    
@@ -52,24 +52,24 @@ Dear {!recipient.name},<br/>
 </table>
 <br/>
 <hr/>
-<p><b><font face="Arial" color="#000080">Address Information</font></b></p>
+<p><b><font face="Arial" color="#000080">{!$Label.Address_Information}</font></b></p>
 
 <table border="0" width="100%" id="table2">
 <tr>
        <td colspan="3">
-           <font face="Arial">Account name: {!relatedTo.Account.Name} <br/><br/></font>
+           <font face="Arial">{!$Label.Account_Name}: {!relatedTo.Account.Name} <br/><br/></font>
        </td>
 </tr>
 <tr>
        <td>          
-           <font face="Arial">Bill To:<br/>
+           <font face="Arial">{!$Label.Bill_To}:<br/>
                              {!relatedTo.Account.BillingStreet}<br/>
                              {!relatedTo.Account.BillingPostalCode} {!relatedTo.Account.BillingCity}
            </font>
         </td>
         <td width="50%"></td>
         <td >
-           <font face="Arial">Ship To:<br/>
+           <font face="Arial">{!$Label.Ship_To}:<br/>
                               {!relatedTo.Account.ShippingStreet}<br/>
                               {!relatedTo.Account.ShippingPostalCode} {!relatedTo.Account.ShippingCity}
            </font>
@@ -78,15 +78,15 @@ Dear {!recipient.name},<br/>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Products</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.Products_mail}</font></b></p>
 <table border="0" width="100%" id="table4">
 <tr>
-       <td bgcolor="#C0C0C0"><font face="Arial">Product</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Description</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Image</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Quantity</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Unit Price</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Total Price</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Product_mail}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Description_mail}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Image_mail}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Quantity_mail}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Unit_Price_mail}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Total_Price_mail}</font></td>
 </tr>
 <tr>
        <apex:repeat value="{!relatedTo.OpportunityLineItems}" var="line">
@@ -102,20 +102,20 @@ Dear {!recipient.name},<br/>
 </tr>
 <tr>
        <td bgcolor="#C0C0C0" align="right" colspan="6">
-       <font face="Arial"><b>Total:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
+       <font face="Arial"><b>{!$Label.Total_mail}:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Terms and Conditions</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.TermsAndConditions_mail}</font></b></p>
 <table border="0" width="100%" id="table3">
 <tr>
         
        
         <td><font face="Arial">
-              Payment Method:&nbsp;<apex:OutputField value="{!relatedTo.QuotePaymentMode__c}"/><br/>
-              Payment Terms:&nbsp; <apex:OutputField value="{!relatedTo.QuotePaymentTime__c}"/><br/>
-              Billing Frequency:&nbsp; <apex:OutputField value="{!relatedTo.QuoteBillingFrequency__c}"/><br/>
+              {!$Label.PaymentMethod_mail}:&nbsp;<apex:OutputField value="{!relatedTo.QuotePaymentMode__c}"/><br/>
+              {!$Label.PaymentTerms_mail}:&nbsp; <apex:OutputField value="{!relatedTo.QuotePaymentTime__c}"/><br/>
+              {!$Label.BillingFrequency_mail}:&nbsp; <apex:OutputField value="{!relatedTo.QuoteBillingFrequency__c}"/><br/>
             </font>
        </td>
 </tr>
@@ -125,11 +125,11 @@ Dear {!recipient.name},<br/>
 <br/>
 <hr/>
 <table width="100%" id="table5">
-Special Terms:
+{!$Label.SpecialTerms_mail}:
 </table>
 <p>&nbsp;</p>
 <hr/>
-<p align="center"><font face="Arial"><i>Copyright {!$Organization.Name}.</i></font></p>
+<p align="center"><font face="Arial"><i>{!$Label.Copyright_mail} {!$Organization.Name}.</i></font></p>
 
 </messaging:htmlEmailBody>
     <messaging:attachment renderAs="pdf" filename="{!relatedTo.name}">               
@@ -139,7 +139,7 @@ Special Terms:
         <img src='{!URLFOR($Resource.Logo4567687)}' title="logo" />
     </td>
     <td  align="right"><font face="Arial" >
-    <b>Invoice for {!relatedTo.Account.Name}</b></font><br/>
+    <b>{!$Label.InvoiceFor_PDF} {!relatedTo.Account.Name}</b></font><br/>
    </td>
    
   
@@ -157,11 +157,11 @@ Special Terms:
         {!$Organization.Country}<br/>
         </font></td> 
         <td width="60%">&nbsp;</td>
-   <td ><font face="Arial">Invoice number: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
+   <td ><font face="Arial">{!$Label.InvoiceNumber_PDF}: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
    {!line2.name}</apex:repeat></font><br/>
   
    
-   <font face="Arial">Invoice Date: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
+   <font face="Arial">{!$Label.InvoiceDate_PDF}: <apex:repeat value="{!relatedTo.Invoices__r}" var="line2">
    {!line2.Invoice_Date__c}  </apex:repeat></font></td>
  
    
@@ -170,24 +170,24 @@ Special Terms:
 </table>
 <br/>
 <hr/>
-<p><b><font face="Arial" color="#000080">Address Information</font></b></p>
+<p><b><font face="Arial" color="#000080">{!$Label.AddressInformation_PDF}</font></b></p>
 
 <table border="0" width="100%" id="table2">
 <tr>
        <td colspan="3">
-           <font face="Arial">Account name: {!relatedTo.Account.Name} <br/><br/></font>
+           <font face="Arial">{!$Label.AccountName_PDF}: {!relatedTo.Account.Name} <br/><br/></font>
        </td>
 </tr>
 <tr>
        <td>          
-           <font face="Arial">Bill To:<br/>
+           <font face="Arial">{!$Label.BillTo_PDF}:<br/>
                              {!relatedTo.Account.BillingStreet}<br/>
                              {!relatedTo.Account.BillingPostalCode} {!relatedTo.Account.BillingCity}
            </font>
         </td>
         <td width="50%"></td>
         <td >
-           <font face="Arial">Ship To:<br/>
+           <font face="Arial">{!$Label.ShipTo_PDF}:<br/>
                               {!relatedTo.Account.ShippingStreet}<br/>
                               {!relatedTo.Account.ShippingPostalCode} {!relatedTo.Account.ShippingCity}
            </font>
@@ -196,15 +196,15 @@ Special Terms:
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Products</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.Products_PDF}</font></b></p>
 <table border="0" width="100%" id="table4">
 <tr>
-       <td bgcolor="#C0C0C0"><font face="Arial">Product</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Description</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Image</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Quantity</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Unit Price</font></td>
-       <td bgcolor="#C0C0C0"><font face="Arial">Total Price</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Product_PDF}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Description_PDF}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Image_PDF}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Quantity_PDF}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Unit_Price_PDF}</font></td>
+       <td bgcolor="#C0C0C0"><font face="Arial">{!$Label.Total_Price_PDF}</font></td>
 </tr>
 <tr>
        <apex:repeat value="{!relatedTo.OpportunityLineItems}" var="line">
@@ -220,20 +220,20 @@ Special Terms:
 </tr>
 <tr>
        <td bgcolor="#C0C0C0" align="right" colspan="6">
-       <font face="Arial"><b>Total:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
+       <font face="Arial"><b>{!$Label.Total_PDF}:</b>&nbsp;<apex:OutputField value="{!relatedTo.Amount}"/></font></td>
 </tr>
 </table>
 <br/>
 <hr/>
-<p><b><font color="#000080" face="Arial">Terms and Conditions</font></b></p>
+<p><b><font color="#000080" face="Arial">{!$Label.TermsAndConditions_PDF}</font></b></p>
 <table border="0" width="100%" id="table3">
 <tr>
         
        
         <td><font face="Arial">
-              Payment Method:&nbsp;<apex:OutputField value="{!relatedTo.QuotePaymentMode__c}"/><br/>
-              Payment Terms:&nbsp; <apex:OutputField value="{!relatedTo.QuotePaymentTime__c}"/><br/>
-              Billing Frequency:&nbsp; <apex:OutputField value="{!relatedTo.QuoteBillingFrequency__c}"/><br/>
+              {!$Label.PaymentMethod_PDF}:&nbsp;<apex:OutputField value="{!relatedTo.QuotePaymentMode__c}"/><br/>
+              {!$Label.PaymentTerms_PDF}:&nbsp; <apex:OutputField value="{!relatedTo.QuotePaymentTime__c}"/><br/>
+              {!$Label.BillingFrequency_PDF}:&nbsp; <apex:OutputField value="{!relatedTo.QuoteBillingFrequency__c}"/><br/>
             </font>
        </td>
 </tr>
@@ -243,11 +243,11 @@ Special Terms:
 <br/>
 <hr/>
 <table width="100%" id="table5">
-Special Terms:
+{!$Label.SpecialTerms_PDF}:
 </table>
 <p>&nbsp;</p>
 <hr/>
-<p align="center"><font face="Arial"><i>Copyright {!$Organization.Name}.</i></font></p>
+<p align="center"><font face="Arial"><i>{!$Label.Copyright_PDF} {!$Organization.Name}.</i></font></p>
 
     </messaging:attachment>      
     
